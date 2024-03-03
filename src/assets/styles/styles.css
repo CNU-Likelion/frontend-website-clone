@@ -240,3 +240,99 @@ nav {
   font-size: 20px;
   margin-top: 20px;
 }
+
+/* membership */
+.membership {
+  width: 100%;
+  height: auto;
+  padding: 20px 0 100px 0;
+  color: #fff;
+  max-width: 992px;
+}
+.membership__title {
+  text-align: center;
+  font-size: 40px;
+}
+.membership__subtitle {
+  text-align: center;
+  color: rgb(192, 192, 192);
+  font-size: 18px;
+  margin-top: 20px;
+}
+.membership__chart {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
+}
+.membership__head {
+  border-bottom: 1px solid #fff;
+  top: 0;
+  position: sticky;
+  z-index: 1;
+  background-color: #040714;
+}
+.membership__head__item {
+  width: 30%;
+  padding: 20px 15px 15px 15px;
+}
+.membership__head__item-1 {
+  width: 40%;
+}
+.membership__head__item-2 {
+  border-top: 2px solid rgba(255, 255, 255, 0.1);
+}
+.membership__head__item-3 {
+  border-top: 2px solid rgba(255, 255, 255, 0.3);
+}
+.membership__head__item-3, .membership__body__item-3 {
+  background-color: #1d1f2b;
+}
+.membership__head__title {
+  font-size: 20px;
+}
+.membership__chart__button {
+  width: 100%;
+  border: none;
+  font-size: 14px;
+  border-radius: 4px;
+  color: #fff;
+  height: 50px;
+  background-color: #0063e5;
+  margin-top: 10px;
+}
+.membership__body__item {
+  padding: 35px 15px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  font-size: 18px;
+  text-align: center;
+  color: rgb(192, 192, 192);
+}
+.membership__body__item-1 {
+  text-align: left;
+}
+.membership__body__button {
+  color: #fff;
+  border: solid 1px #fff;
+  background: none;
+}
+.membership__text {
+  margin-top: 20px;
+  color: rgb(192, 192, 192);
+  font-size: 12px;
+  & u {
+    color: #fff;
+  }
+}
+.membership__recommand {
+  width: 45px;
+  height: 25px;
+  color: #003ccc;
+  background-color: #fff;
+  border-radius: 20px;
+  font-size: 12px;
+  line-height: 25px;
+  position: absolute;
+  top: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+}
