@@ -8,6 +8,11 @@ body {
   background-color: #faf7f5;
 }
 
+ul {
+  list-style: none;
+  padding: 0;
+}
+
 .sr-only {
   clip: rect(1px, 1px, 1px, 1px);
   clip-path: inset(50%);
@@ -177,7 +182,7 @@ nav {
 .popular {
   width: 100%;
   height: auto;
-  padding: 20px 50px 70px 50px;
+  padding: 20px 5vw 70px 5vw;
 }
 .popular__title {
   font-size: 40px;
@@ -199,4 +204,39 @@ nav {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+/* intro */
+.intro {
+  color: #fff;
+  padding: 110px 5vw;
+  text-align: center;
+}
+.intro__list {
+  width: 100%;
+  display: flex;
+  gap: 40px;
+  justify-content: space-between;
+}
+.intro__item {
+  width: 50%;
+}
+.intro__item::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 1px;
+  height: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+  right: -22px;
+  background-color: #fff;
+}
+.intro__item:last-child::after {
+  display: none;
+}
+.intro__text {
+  color: rgb(192, 192, 192);
+  font-size: 20px;
+  margin-top: 20px;
 }
