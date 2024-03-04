@@ -2,9 +2,8 @@
 <html lang="ko">
 <head>
     <title>새로운 감동과 가능성을 발견해 보세요 우리가 좋아하는 모든 이야기, 지금 스트리밍 중</title>
-    <link href="">
-    <script>
-    </script>
+    <link href="./assets/styles/index.css" rel="stylesheet">
+    <script src="./assets/styles/index.js"></script>
 </head>
     <body class="">
         <header class="">
@@ -12,24 +11,24 @@
                 <ul class="nav-list">
                     <li class="nav-list-item">
                         <a href="https://www.disneyplus.com/identity/login/enter-email" class="small secondary" data-gv2-element="element" data-gv2-key="button" data-gv2-name="log_in" data-gv2-type="button" data-gv2-elementid="log_in" data-analytics="click" data-analytics-name="Nav Link - Log In - USUF" data-testid="log_in_header">
-                            <span>
-                                로그인
-                            </span>
+                            로그인
                         </a>
                     </li>
                 </ul>
             </nav>
         </header>
         <main>
-            <section class="first_section">
+    <section class="first_section">
+        <div class="first_section_right">
+            <div class="content-container">
                 <picture class="logo">
-                    <img src="./assets/images/logo_png.png" width="1045" height="569" alt="Disney+ Logo" loading="lazy">
+                    <img class="disneylogo" src="./assets/images/logo_png.png" width="1045" height="569" alt="Disney+ Logo" loading="lazy">
                 </picture>
-                <h1>
+                <h1 class="logo-discription">
                     이 모든 이야기가 여기에<br>지금 스트리밍 중
                 </h1>
-                <p>
-                    <span class="fine">구독을 시작하려면 이메일 주소를 입력하세요</span>
+                <p class="subscribe">
+                    <span id="subscribe-fine">구독을 시작하려면 이메일 주소를 입력하세요</span>
                     <span class="email_form">
                         <form class="subscription-form" action="YOUR_SERVER_ENDPOINT" method="POST">
                             <input type="email" name="email" placeholder="이메일 주소" required>
@@ -42,13 +41,37 @@
                     </span>
                 </p>
                 <p class="text-fine">*멤버십이 필요합니다, 월간 멤버십 12개월 구독료 대비 할인된 가격입니다.</p>
-                <div class="image-gallery">
+            </div>
+        </div>
+            <div class="controls-wrapper">
+                <div class="controls-container">
+                    <button class="pagination1"></button>
+                    <button class="pagination"></button>
+                    <button class="pagination"></button>
+    
+                    <button class="pagination pause"></button> <!-- 일시정지 버튼 -->
+                </div>
+            </div>
+            <div class="primary-text fine">로얄로더</div>
+            <div class="secondary-text-fine">2월 28일 스트리밍</div>
+
+                <!--  자바스크립트 배운 후, Pagination 기법 사용해보기
+                    <div class="image-gallery">
                     <div class="controls-container">
                         <button class="pagination" aria-label="Gallery Image1"></button>
                         <button class="pagination" aria-label="Gallery Image 2"></button>
                         <button class="pagination" aria-label="Gallery Image 3"></button>
                         <button class="pagination" aria-label="Gallery Image 4"></button>
                         <button data-action="stop" aria-label="Pause"></button>
+                    </div>
+                    <div class="Image-container">
+                        <picture>
+                            <img class="gallery-image" src="assets/images/header_img1.jpeg" alt="로얄로더">
+                        </picture>
+                        <div class="gallery-text-container">
+                            <div class="primary-text fine">로얄로더</div>
+                            <div class="secondary-text-fine">2월 28일 스트리밍</div>
+                        </div>
                     </div>
                     <ul class="gallery-image-container">
                         <li class="gallery-image-container active-image">
@@ -88,7 +111,7 @@
                             </div>
                         </li>
                     </ul>
-                </div>
+                </div> -->
             </section>
             <section class="second_grid_section">
                 <h2>인기 콘텐츠</h2>    

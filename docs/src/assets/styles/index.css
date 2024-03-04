@@ -1,0 +1,335 @@
+/* 전역 설정 */
+* {
+    box-sizing: border-box;
+    margin: 0px;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    background-color: #040714;
+}
+
+/* 기본 폰트 설정 */
+body {
+    color: silver;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: .2px;
+    line-height: 1.4;
+}
+
+/* 헤더 타이틀 및 세부 폰트 설정 */
+h1, .h2, h1, h2 {
+    font-weight: 700;
+    letter-spacing: normal;
+    line-height: 1.2;
+}
+
+h1 {
+    font-size: 44px;
+    color: #f9f9f9;
+}
+
+.fine, .secondary-text-fine, .membership, .text-fine {
+    color: silver;
+}
+
+.fine {
+    font-size: 16px;
+}
+
+.secondary-text-fine {
+    font-size: 12px;
+}
+
+.membership {
+    font-size: 14px; /* px 단위 추가 */
+}
+
+.text-fine {
+    font-size: 11px;
+}
+
+/* 섹션 및 컨텐트 컨테이너 설정 */
+.first_section {
+    position: relative; /* 로그인을 위한 상대 위치 설정 */
+    width: 100%;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.first_section_right{
+    position: relative; /* 로그인을 위한 상대 위치 설정 */
+    width: 100%;
+    height: 800px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    background-image: url("../images/header_img1.jpeg");
+}
+
+.content-container {
+    width: 639.37px;
+    height: 581.74px;
+    z-index: 1;
+    padding-left: 80px;
+    display: flex;
+    flex-direction: column;
+}
+
+.disneylogo {
+    width: 180px;
+    height: 97.96px;
+}
+
+.logo-discription{
+    font-size: 44px;
+    margin-top: 30px;
+}
+
+.subscribe{
+    width: 552px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+#subscribe-fine{
+    color: #f9f9f9;
+}
+/* 구독 섹션 스타일 */
+.subscribe {
+    width: 100%; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.subscription-form {
+    display: flex;
+    flex-direction: row; /* 항목들을 가로로 배열 */
+    gap: 6px; /* 입력 필드와 버튼 사이의 간격 */
+    width: 100%;
+    margin: 20px 0px;
+}
+
+/* 이메일 입력 필드 스타일 */
+.subscription-form input[type="email"] {
+    flex-grow: 3; /* 전체 공간의 3/4을 차지 */
+    padding: 20px; /* 적절한 패딩 */
+    border: none;
+    border-radius: 4px; 
+}
+
+/* 버튼 스타일 */
+.subscription-form button {
+    flex-grow: 1;
+    padding: 20px; 
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px; 
+    cursor: pointer;
+}
+
+/* 로그인 버튼 위치 설정 */
+.navigation_login {
+    position: absolute; /* 절대 위치 사용 */
+    top: 20px; /* 상단에서 20px 떨어진 곳에 위치 */
+    right: 20px; /* 우측에서 20px 떨어진 곳에 위치 */
+    z-index: 2; /* first_section 위에 나타나도록 z-index 설정 */
+}
+.nav-list{
+    list-style-type: none; 
+    margin: 0; 
+    padding: 0; 
+    display: flex; 
+    align-items: center; 
+    justify-content: flex-start; 
+
+}
+
+.nav-list-item{
+    display: flex;
+    width: 86.59px;
+    height: 50px;
+    padding: 16px 17px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    border: 1px solid #C0C0C0;
+    background: rgba(0, 0, 0, 0.80);
+    color: #f9f9f9;
+    font-size: 16px; 
+    transition: background-color 0.3s, border 0.3s, color 0.3s;/* 부드러운 전환 효과 */
+    
+}
+
+
+.nav-list a {
+    text-decoration: none; /* 링크 밑줄 제거 */
+    color: #f9f9f9;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.nav-list-item:hover, .nav-list-item:hover a {
+    background-color: #f9f9f9; /* 배경색 변경 */
+    color: #000000; /* 글자색을 검정으로 변경 */
+    border: 1px solid #f9f9f9; /* 테두리 색상 변경 */
+    
+}
+
+.membership a{
+    color: #f9f9f9;
+}
+
+.text-fine{
+    margin-top: 20px;
+}
+
+/* pagination 버튼 디자인 */
+.controls-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.controls-container {
+    display: flex;
+    gap: 10px; 
+}
+
+.pagination1 {
+    width: 219.55px;
+    height: 2px;
+    flex-shrink: 0;
+    opacity: 0.5;
+    background: #F9F9F9;
+    border: none; 
+}
+.pagination {
+    width: 219.55px;
+    height: 2px;
+    flex-shrink: 0;
+    opacity: 0.2;
+    background: #C0C0C0;
+    border: none; 
+}
+
+/* .pagination.pause {
+    width: 40px;
+    height: 40px;
+    /* background-image: url('../images/pause-button.png'); }*/
+
+.second_grid_section{
+    width: 100%;
+    height: 810px;
+    display: flex;
+    flex-direction: column;
+}
+
+.second_grid_section h2{
+    margin-top: 24px;
+    font-size: 40px;
+    color: #F9F9F9;
+    text-align: center;
+}
+
+/* 그리드 스타일 */
+.grid-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    padding: 30px 10px 30px 70px; 
+    justify-content: center; 
+    list-style-type: none;
+    margin: 0; 
+}
+
+.grid-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 12px;
+}
+
+
+.tile {
+    width: 100%; 
+    display: flex;
+    justify-content: center;
+}
+
+.tile picture img {
+    width: 410px; /* 이미지 너비 설정 */
+    height: 230px; /* 이미지 높이 설정 */
+    flex-shrink: 0; /* 이미지 크기 축소 방지 */
+    border-radius: 2px;
+}
+
+/* second_gird_section_discription */
+.second_gird_section_discription .grid-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px; 
+    align-items: center; 
+    text-align: center; 
+}
+
+.second_gird_section_discription .grid-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative; 
+}
+
+/* 구분선 스타일 */
+.second_gird_section_discription .grid-item:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 10%;
+    width: 1px;
+    height: 80px;
+    background: #F9F9F9;
+}
+
+.second_gird_section_discription .h3 {
+    color: #F9F9F9;
+    font-family: Inter;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 33.6px; /* 120% */
+    letter-spacing: 0.2px;
+    margin-bottom: 22px;
+}
+
+.second_gird_section_discription .medium {
+    color: #C0C0C0;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px; /* 140% */
+    letter-spacing: 0.2px;
+}
+
+/* third_section */
+third_section{
+    width: 100%;
+    display: flex;
+}
