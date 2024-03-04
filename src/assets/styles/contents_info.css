@@ -1,0 +1,21 @@
+#contents_info {
+    margin-top: 320px;
+}
+
+#contents_info img {
+    width: 600px;
+    height: 450px;
+    position: relative;
+    bottom: 295px;
+    left: 314px;
+}
+
+#text_container {
+    width: 450px;
+    text-align: left;
+    margin-left: 150px;
+}
+
+#text_container p {
+    width: 495px;
+    font-size: 12px;}
