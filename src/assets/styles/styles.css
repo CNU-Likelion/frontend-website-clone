@@ -439,3 +439,40 @@ nav {
 .qna__membership {
   font-size: 20px;
 }
+
+/* footer */
+footer {
+  color: #fff;
+  text-align: center;
+  padding: 30px 5vw;
+  font-size: 12px;
+  color: rgb(192, 192, 192);
+}
+.footer__content {
+  max-width: 1000px;
+}
+.footer__logo {
+  width: 80px;
+}
+.footer__list {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.footer__item {
+  padding: 0 12px;
+  display: flex;
+  line-height: 24px;
+}
+.footer__description {
+  line-height: 17px;
+}
+.footer__description-1, .footer__description-3 {
+  margin-top: 20px;
+}
+.language {
+  background-color: #040714;
+  color: rgb(192, 192, 192);
+  border: none;
+  padding: 0 10px 0 5px;
+}
