@@ -1,0 +1,215 @@
+/* styles.css */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: black;
+}
+
+header {
+    position: relative; /* 헤더를 상대 위치로 설정 */
+    padding: 20px 0; /* 헤더의 위아래 패딩 설정 */
+}
+
+.header-img {
+    width: 100%; /* 헤더 이미지 너비를 100%로 설정 */
+    height: auto; /* 비율 유지 */
+}
+
+.header-content {
+    position: absolute; /* 로고와 텍스트를 절대 위치로 설정 */
+    top: 50%; /* 부모 요소의 상단에서 50% 위치에 배치 */
+    transform: translateY(-50%); /* 요소를 수직으로 -50%만큼 이동하여 수직 가운데 정렬 */
+    color: white; /* 텍스트 색상 설정 */
+}
+
+.logo {
+    width: 100px; /* 로고 이미지 너비 설정 */
+    display: block; /* 인라인 요소가 아닌 블록 요소로 설정하여 중앙 정렬 적용 */
+    margin-bottom: 20px; /* 로고의 아래 여백 설정 */
+}
+
+.subscription input[type="email"] {
+    width: 300px; /* 입력창 너비 설정 */
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.subscription button {
+    background-color: blue;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.discount {
+    margin-top: 20px;
+}
+
+.discount u {
+    text-decoration: underline; /* 밑줄 스타일 적용 */
+}
+
+.slogan {
+    font-size: 24px; /* 폰트 크기 설정 */
+    font-weight: bold; /* 볼드체 설정 */
+    margin-bottom: 10px; /* 아래쪽 여백 설정 */
+    white-space: pre-line; /* 줄 바꿈 유지 설정 */
+}
+
+/* 2번째*/
+
+.concept-1 {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.popular-content {
+    font-size: 24px;
+    font-weight: bold;
+    color: white; /* 인기 콘텐츠 텍스트 색상 설정 */
+}
+
+/* 컨셉 2: 영화 이미지 그리드 */
+.concept-2 {
+    padding: 20px;
+}
+
+.movie-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+
+.movie-grid img {
+    width: 100%;
+    height: auto;
+}
+
+/* 3번째 컨셉 */
+.concept-3 {
+    padding: 50px 0;
+    background-color: #000;
+    color: #fff;
+}
+
+.content-wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.content {
+    text-align: center;
+    flex: 1;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+.divider {
+    width: 2px;
+    height: 100px;
+    background-color: #fff;
+}
+
+
+.concept-4 {
+    background-color: #000;
+    color: #fff;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.text {
+    width: 50%;
+}
+
+.title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.description {
+    font-size: 16px;
+}
+
+.image {
+    width: 50%;
+    height: auto;
+}
+
+/* 5번째 컨셉 */
+.concept-5 {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.concept-text {
+    margin-bottom: 50px; /* 텍스트와 이미지 사이 간격 설정 */
+}
+
+.concept-text h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.concept-text p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: white;
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+
+.image-grid img {
+    width: 100%;
+    height: auto;
+}
+
+.concept-6 {
+    padding: 50px 0;
+}
+
+.faq-heading {
+    text-align: center;
+    color: white;
+
+}
+
+.faq-box {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+.faq-item {
+    background-color: grey;
+    padding: 20px;
+    margin: 20px 0; /* 상하 여백은 20px, 좌우 여백은 0으로 설정 */
+    margin-left: 20px; /* 좌측 여백을 자동으로 설정하여 화면 우측에 정렬 */
+    margin-right: 20px; /* 우측 여백을 자동으로 설정하여 화면 좌측에 정렬 */
+}
+.question {
+    font-weight: bold;
+}
+
