@@ -408,7 +408,7 @@ nav {
 }
 .qna__item__content {
   display: flex;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
   cursor: pointer;
 }
 .qna__question {
@@ -424,6 +424,8 @@ nav {
   color: rgb(192, 192, 192);
   font-size: 18px;
   line-height: 25px;
+  display: none;
+  margin-top: 20px;
   & u {
     color: #fff;
   }
