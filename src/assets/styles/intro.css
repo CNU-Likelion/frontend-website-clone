@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: black;
+}
+
+h1, p, ul {color: white;}
+
+header {
+    height: 600px;
+}
+
+#wrap {
+    text-align: center;
+}
+
+#wrap_center{
+    width: 1280;
+    height: ;
+}
+
+#intro {
+    width: 100%; /*사이즈 창 너비에 맞추고 싶을 때!!*/
+    height: 700px;
+    text-align: left;
+}
+
+#intro_bg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: relative; /*아래에 올 div를 relative 속성 줌.
+    상대위치 기본 위치(static으로 지정되었을 때의 위치)를 기준으로 좌표 프로퍼티(top, bottom, left, right)를 사용하여 위치를 이동*/
+}
+
+#login_button {
+    background-color:black;
+    color: white;
+    border-color: white;
+    width: 70px;
+    height: 40px;
+    position: absolute; /*위에 올 div를 absolute 속성 줌.*/
+    top: 20px;
+    left: 93%;
+}
+
+#intro_text {
+    position: absolute; /*위에 올 div를 absolute 속성 줌.
+    절대위치 부모 요소 또는 가장 가까이 있는 조상 요소(static 제외)를 기준으로 좌표 프로퍼티(top, bottom, left, right)만큼 이동.
+    즉,relative요소를 기점으로 움직이기 때문에 relative 위에 위치할수 있다.*/
+    left: 7%;
+    top: 15%;
+    background: none;
+}
+
+#intro h1 {
+    font-size: 30px;
+}
+
+#intro h1, p {
+    background: none; /*전체에 배경 검정색 적용해서 이거 안하니까 네모박스 생겨버림*/
+}
+
+#email {
+    width: 350px;
+    height: 30px;
+    background-color: white;
+    position: relative;
+    margin-bottom: 15px;
+}
+
+#email_button {
+    background-color:rgb(31, 103, 246) ;
+    border: none;
+    width: 108px;
+    height: 32px;
+    position: absolute; }
+

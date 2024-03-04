@@ -1,0 +1,27 @@
+#FQA {margin-top: 100px;}
+
+.FQA_box {
+    margin-left: 10%;
+    margin-top: 15px;
+    background-color: rgb(28, 28, 28);
+    text-align: left;
+    width: 80%;
+    height: 50px;
+}
+
+.FQA_box p {
+    position: relative;
+    top: 15px;
+    left: 20px;
+    font-size: 13px;
+}
+
+.plus1 {
+    position: relative;
+    bottom: 15px;
+    left: 97%;
+    border: 0;
+    background-color: transparent; /*배경 투명*/
+    font-size: 35px;
+    color: white;
+}

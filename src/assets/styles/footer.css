@@ -1,0 +1,25 @@
+footer {
+    margin-top: 150px;
+    margin-left: 300px;
+    margin-right: 300px;
+    font-size: 11px;
+}
+
+footer img {
+    width: 80px;
+    height: 43px;
+}
+
+footer ul, p {
+    color: rgb(195, 195, 195);
+    display: flow-root; /*요소에 블록 컨테이너를 생성해서 float가 적용된 자식 요소를 인식시킨다.*/
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer li {
+    float: left;
+    margin: 18px;
+}

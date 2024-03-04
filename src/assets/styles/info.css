@@ -1,0 +1,34 @@
+#info {
+    margin-top: 150px;
+}
+
+.info_write {
+    width: 330px;
+    height: 124px;
+    display: inline-block;
+}
+
+#info_write1 {
+    position: relative;
+    top: 23px;
+    border-right: 2px;
+    border-color: white;
+}
+#info_write2 {
+    position: relative;
+}
+#info_write3 {
+    position: relative;
+}
+#info_write4 {
+    position: relative;
+    top: 23px;
+}
+
+.line {
+    display: inline-block;
+    border-left : thin solid white;
+    height : 60px;
+    width: 0;
+}
+
